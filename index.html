@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,14 +22,16 @@
     <header>
       <h1><b>LOGO</b></h1>
       <nav>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Shop</a>
-        <a href="">Contact Us</a>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact Us</a>
       </nav>
       <div id="leftnav">
-        <a href="">Log-In</a>
-        <button><b>Sign-Up</b></button>
+        <a href="logIn.html">Log-In</a>
+        <button>
+          <b><a href="signup.html">Sign-Up</a></b>
+        </button>
       </div>
     </header>
     <section id="home">
@@ -82,7 +88,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
             tempora?
           </p>
-          <button>Shop Now</button>
+          <button>Buy Now</button>
         </div>
         <div class="card">
           <img src="./assets/flower.png" alt="" />
@@ -91,7 +97,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
             tempora?
           </p>
-          <button>Shop Now</button>
+          <button>Buy Now</button>
         </div>
         <div class="card">
           <img src="./assets/flower.png" alt="" />
@@ -100,7 +106,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
             tempora?
           </p>
-          <button>Shop Now</button>
+          <button>Buy Now</button>
         </div>
       </div>
       <div class="card-container">
@@ -111,7 +117,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
             tempora?
           </p>
-          <button>Shop Now</button>
+          <button>Buy Now</button>
         </div>
         <div class="card">
           <img src="./assets/flower.png" alt="" />
@@ -120,7 +126,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
             tempora?
           </p>
-          <button>Shop Now</button>
+          <button>Buy Now</button>
         </div>
         <div class="card">
           <img src="./assets/flower.png" alt="" />
@@ -129,9 +135,43 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
             tempora?
           </p>
-          <button>Shop Now</button>
+          <button>Buy Now</button>
         </div>
       </div>
     </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="row">
+        <div>
+          <form action="">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email Address" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message Here"
+            ></textarea>
+            <button>Submit</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h4>Visit Us:</h4>
+          <p>St. Joseph Village 6</p>
+          <p>Cabuyao, Laguna</p>
+          <p>Philippines</p>
+          <p><i class="bi bi-telephone-inbound-fill"></i> 0994 891 5602</p>
+          <ul>
+            <li><i class="bi bi-facebook"></i></li>
+            <li><i class="bi bi-messenger"></i></li>
+            <li><i class="bi bi-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; All Rights Reserve 2024 | KodeGo WD98 | Princess Ymasa</p>
+    </footer>
   </body>
 </html>

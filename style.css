@@ -6,6 +6,7 @@ html,
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 header {
@@ -14,7 +15,6 @@ header {
   background-color: #0b3954;
   color: #f1f1f1;
   padding: 15px;
-  position: relative;
 }
 header nav {
   margin-left: 30px;
@@ -24,8 +24,10 @@ header a {
   margin: 0 15px;
   text-decoration: none;
 }
-header#leftnav {
-  float: inline-end;
+header #leftnav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 header button {
@@ -35,6 +37,7 @@ header button {
   color: #f1f1f1;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 #home {
@@ -51,12 +54,14 @@ header button {
 }
 
 #home .main-content {
-  max-width: 500px;
+  max-width: 600px;
   margin-right: 50px;
+  font-size: 1.6025rem;
 }
 #home h1 {
   color: #9d5691;
   margin-top: 0;
+  font-size: 2rem;
 }
 
 #home img {
@@ -71,6 +76,7 @@ header button {
   color: #f1f1f1;
   border: none;
   border-radius: 10px;
+  font-size: 1.6025rem;
 }
 
 #about {
@@ -78,14 +84,21 @@ header button {
   margin-top: 50px;
   background-image: url(./assets/login-vector.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100vw;
+  background-position: left;
   text-align: center;
   padding: 50px;
 }
 
+h2 {
+  font-size: 2rem;
+}
+#about p {
+  padding: 0 20vw;
+}
+
 #about .about-img-container {
   margin-top: 100px;
-  position: relative;
 }
 
 #about img {
@@ -94,11 +107,11 @@ header button {
   padding: 25px;
   border: none;
   background-color: #f1f1f1;
-  box-shadow: 3px 3px 10px #9d5691;
+  box-shadow: 3px 3px 10px #c5c4c4;
 }
 
 #shop {
-  margin-top: 50px;
+  padding-top: 100px;
   text-align: center;
 }
 #shop img {
@@ -111,10 +124,11 @@ header button {
   margin: auto;
 }
 #shop .card {
-  width: 250px;
-  margin: 100px;
+  width: 300px;
+  margin: 50px;
   padding: 15px;
   background-color: #f1f1f1;
+  box-shadow: 3px 3px 5px #c5c4c4;
 }
 
 #shop .card button {
@@ -122,4 +136,118 @@ header button {
   border: none;
   border-radius: 5px;
   background-color: #368f8b;
+}
+
+#contact,
+#signUp {
+  height: 100vh;
+  padding-top: 100px;
+  text-align: center;
+  background-image: url(./assets/bg-botto-right.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100vw;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#contact form {
+  margin: 50px 200px;
+  padding: 50px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+#contact form input,
+#contact form textarea {
+  display: block;
+  margin-top: 25px;
+  padding: 15px;
+  width: 500px;
+  text-align: left;
+}
+
+#contact form button,
+#logIn button,
+#signUp button {
+  display: block;
+  margin-top: 25px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #368f8b;
+}
+
+#contact .contact-info {
+  margin-right: 300px;
+  margin-bottom: 250px;
+  padding: 0 50px;
+  text-align: left;
+  left: 0;
+}
+#contact ul {
+  display: inline-block;
+  margin-left: 0;
+  padding-left: 0;
+}
+#contact li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 15px;
+  font-size: 2rem;
+  color: #0b3954;
+}
+
+#logIn {
+  height: 100vh;
+  background-image: url(./assets/login-vector.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.card {
+  margin: 15px;
+  padding: 50px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  text-align: center;
+}
+.card input,
+.card textarea {
+  display: block;
+  margin-top: 25px;
+  padding: 15px;
+  width: 500px;
+  text-align: left;
+}
+
+.right-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.right-text a {
+  margin-top: auto;
+  color: black;
+}
+
+footer {
+  padding: 15px;
+  background-color: #0b3954;
+  color: #f1f1f1;
+  text-align: center;
 }
